@@ -37,3 +37,8 @@ router.get("/", (req, res) => {
     let id = Number(req.params.id);
     return res.json(productos.deleteById(id));
   });
+
+  app.listen(8080, () => {
+      console.log(
+          "server is running on port 8080");
+  });
